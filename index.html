@@ -34,11 +34,23 @@ body {
 
    </style>
 
-  <title>Cry</title>
+  <title>Llora.</title>
 </head>
 <body>
   <div id="container">
-    <h1>Cry</h1>
+    <h1>Llora.</h1>
   </div>
+
+  <audio id="welcome-sound" controls="false" loop="true" volume="1">
+    <source src="/sonidos/gracioso1.mp3" type="audio/mpeg">
+  </audio>
+
+  <script>
+    window.onload = function() {
+      const audioElement = document.getElementById('welcome-sound');
+      audioElement.play();
+    }
+  </script>
+
 </body>
 </html>
