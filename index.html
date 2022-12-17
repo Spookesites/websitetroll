@@ -1,0 +1,25 @@
+#container {
+  filter: brightness(150%) contrast(150%) hue-rotate(90deg);
+  animation: glitch 1s infinite;
+}
+
+@keyframes glitch {
+  0% {
+    filter: brightness(150%) contrast(150%) hue-rotate(90deg);
+  }
+  5% {
+    filter: brightness(200%) contrast(200%) hue-rotate(180deg);
+  }
+  10% {
+    filter: brightness(150%) contrast(150%) hue-rotate(90deg);
+  }
+  15% {
+    filter: brightness(200%) contrast(200%) hue-rotate(180deg);
+  }
+  20% {
+    filter: brightness(150%) contrast(150%) hue-rotate(90deg);
+  }
+  100% {
+    filter: brightness(150%) contrast(150%) hue-rotate(90deg);
+  }
+}
