@@ -8,7 +8,15 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
+  animation: dance 1.5s infinite;
+  animation-timing-function: linear;
+    animation-fill-mode: forwards;
   }
+
+@keyframes dance {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-64%); }
+}
 
   h1 {
   font-size: 10rem;
